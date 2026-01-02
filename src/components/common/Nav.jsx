@@ -2,12 +2,19 @@ import { Link, useLocation } from 'react-router-dom'
 
 function Nav() {
   const location = useLocation()
-  const isWhiteBackground = location.pathname === '/tutorials'
+  const isWhiteBackground =
+    location.pathname === '/tutorials' ||
+    location.pathname === '/about' ||
+    location.pathname === '/contact' ||
+    location.pathname === '/login' ||
+    location.pathname === '/signup' ||
+    location.pathname.startsWith('/courses')
   const textColor = isWhiteBackground ? 'text-gray-800' : 'text-white'
   const hoverColor = isWhiteBackground ? 'hover:text-gray-600' : 'hover:text-gray-200'
+  const activeTextColor = isWhiteBackground ? 'text-gray-500' : 'text-gray-200'
 
   return (
-    <nav className="w-full px-8 md:px-12 lg:px-16 py-4 bg-transparent">
+    <nav className=" w-full px-8 md:px-12 lg:px-16 py-4 bg-transparent">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo placeholder - will be added later */}
         <div className="flex items-center">
@@ -16,36 +23,51 @@ function Nav() {
 
         {/* Navigation Links */}
         <div className="flex items-center gap-8">
-          <Link 
-            to="/courses" 
-            className={`${textColor} ${hoverColor} transition-colors font-medium`}
+          {/* Courses */}
+          <Link
+            to="/courses"
+            className={`${location.pathname === '/courses' ? activeTextColor : textColor} ${hoverColor} transition-colors font-medium`}
           >
             Courses
           </Link>
-          <Link 
-            to="/about" 
-            className={`${textColor} ${hoverColor} transition-colors font-medium`}
+
+          {/* About StackJunior */}
+          <Link
+            to="/about"
+            className={`${location.pathname === '/about' ? activeTextColor : textColor} ${hoverColor} transition-colors font-medium`}
           >
-            About StackJunior
+            <span className="flex flex-col items-center">
+              <span>About StackJunior</span>
+              {location.pathname === '/about' && (
+                <span className="mt-1 h-1 w-24 rounded-full bg-[#0D5FA6]" />
+              )}
+            </span>
           </Link>
-          <Link 
-            to="/tutorials" 
-            className={`${textColor} ${hoverColor} transition-colors font-medium`}
+
+          {/* Quick Tutorials */}
+          <Link
+            to="/tutorials"
+            className={`${location.pathname === '/tutorials' ? activeTextColor : textColor} ${hoverColor} transition-colors font-medium`}
           >
             Quick Tutorials
           </Link>
-          <Link 
-            to="/account" 
-            className={`${textColor} ${hoverColor} transition-colors font-medium`}
+
+          {/* My Account */}
+          <Link
+            to="/account"
+            className={`${location.pathname === '/account' ? activeTextColor : textColor} ${hoverColor} transition-colors font-medium`}
           >
             My Account
           </Link>
         </div>
 
         {/* Start Learning Button */}
-        <button className="bg-[#FF6B9D] hover:bg-[#FF5A8A] text-white font-semibold px-6 py-2.5 rounded-lg transition-colors">
+        <Link
+          to="/login"
+          className="bg-[#FF6B9D] hover:bg-[#FF5A8A] text-white font-semibold px-6 py-2.5 rounded-lg transition-colors inline-block"
+        >
           Start Learning
-        </button>
+        </Link>
       </div>
     </nav>
   )

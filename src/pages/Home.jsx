@@ -1,13 +1,13 @@
-import Nav from '../components/common/Nav'
-import Footer from '../components/common/Footer'
+import Nav from "../components/common/Nav";
+import Footer from "../components/common/Footer";
 
 function Home() {
   return (
-  <>
+    <>
       {/* Navigation */}
       <div className="bg-[#4A90E2] relative">
         <Nav />
-     
+
         {/* Main Content */}
         <div className="max-w-7xl px-8 mx-auto md:px-10 lg:px-16 py-25">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -26,18 +26,18 @@ function Home() {
                   className="flex-1 px-6 py-4 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white text-lg"
                 />
                 <button className="bg-[#FF6B9D] hover:bg-[#FF5A8A] text-white p-4 rounded-lg transition-colors flex items-center justify-center min-w-[56px]">
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    className="h-6 w-6" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={2} 
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                     />
                   </svg>
                 </button>
@@ -49,7 +49,7 @@ function Home() {
               <div className="w-full max-w-md h-[500px] bg-white/10 rounded-lg flex items-center justify-center backdrop-blur-sm border border-white/20">
                 <p className="text-white/70 text-lg">Image placeholder</p>
               </div>
-              
+
               {/* Decorative Circles Background */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
                 <div className="w-96 h-96 rounded-full border-4 border-blue-400/30 absolute"></div>
@@ -98,20 +98,22 @@ function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             {/* Image on Left */}
             <div className="flex justify-center lg:justify-start">
-              <img 
-                src="/1 1.png" 
-                alt="Detailed Syllabus" 
+              <img
+                src="/1 1.png"
+                alt="Detailed Syllabus"
                 className="w-full max-w-lg h-auto"
               />
             </div>
-            
+
             {/* Content on Right */}
             <div className="flex flex-col justify-center">
               <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 Detailed Syllabus with Localized Content
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                We offer a comprehensive syllabus with localized content and examples to help you grasp programming concepts easily, even without prior experience.
+                We offer a comprehensive syllabus with localized content and
+                examples to help you grasp programming concepts easily, even
+                without prior experience.
               </p>
             </div>
           </div>
@@ -124,15 +126,17 @@ function Home() {
                 An Interactive Personalized Learning Experience
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                With StackJunior's flexible learning options and 1-on-1 code review with seasoned tutors, your learning is suited just for you.
+                With StackJunior's flexible learning options and 1-on-1 code
+                review with seasoned tutors, your learning is suited just for
+                you.
               </p>
             </div>
-            
+
             {/* Image on Right */}
             <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-              <img 
-                src="/1 2.png" 
-                alt="Interactive Learning" 
+              <img
+                src="/1 2.png"
+                alt="Interactive Learning"
                 className="w-full max-w-lg h-auto"
               />
             </div>
@@ -142,20 +146,22 @@ function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Image on Left */}
             <div className="flex justify-center lg:justify-start">
-              <img 
-                src="/1 3.png" 
-                alt="World-Class Jobs" 
+              <img
+                src="/1 3.png"
+                alt="World-Class Jobs"
                 className="w-full max-w-lg h-auto"
               />
             </div>
-            
+
             {/* Content on Right */}
             <div className="flex flex-col justify-center">
               <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 World-Class Learning with World-Class Jobs
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                At StackJunior, we impact students with industry-standard skills and training. We also support them in getting jobs that are available from around the globe. How cool is that?
+                At StackJunior, we impact students with industry-standard skills
+                and training. We also support them in getting jobs that are
+                available from around the globe. How cool is that?
               </p>
             </div>
           </div>
@@ -170,35 +176,34 @@ function Home() {
             QUICK TUTORIALS
           </h2>
           <p className="text-lg md:text-xl text-white max-w-4xl mx-auto leading-relaxed">
-            At StackJunior, acquire industry-relevant tech skills such as programming, software development, data science, cloud computing and more to become a <strong>world-class IT professional</strong>.
+            At StackJunior, acquire industry-relevant tech skills such as
+            programming, software development, data science, cloud computing and
+            more to become a <strong>world-class IT professional</strong>.
           </p>
         </div>
-      
 
-      {/* Middle Section - Main Illustration */}
-      <div className=" w-full py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
-          <div className="flex justify-center items-center">
-            <div className="relative w-full max-w-2xl bg-white rounded-2xl shadow-lg p-4 md:p-6">
-              <img 
-                src="/quick tutorial 1 1.png" 
-                alt="Quick Tutorial Learning Environment" 
-                className="w-full h-auto rounded-xl"
-              />
-              <div className="absolute top-45 left-105 -translate-x-1/2 -translate-y-1/2  max-w-16">
-              <img 
-                src="/play button.png" 
-                alt="Quick Tutorial Learning Environment" 
-                className="w-full h-auto rounded-xl"
-              />
+        {/* Middle Section - Main Illustration */}
+        <div className=" w-full py-12 md:py-16">
+          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
+            <div className="flex justify-center items-center">
+              <div className="relative w-full max-w-2xl bg-white rounded-2xl shadow-lg p-4 md:p-6">
+                <img
+                  src="/quick tutorial 1 1.png"
+                  alt="Quick Tutorial Learning Environment"
+                  className="w-full h-auto rounded-xl"
+                />
+                <div className="absolute top-45 left-105 -translate-x-1/2 -translate-y-1/2  max-w-16">
+                  <img
+                    src="/play button.png"
+                    alt="Quick Tutorial Learning Environment"
+                    className="w-full h-auto rounded-xl"
+                  />
+                </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-      </div>
-      
 
       {/* Bottom Section - Features Include */}
       <div className="bg-white w-full py-12 md:py-20 mt-[200px]">
@@ -212,9 +217,9 @@ function Home() {
             {/* Feature 1: Code Reviews */}
             <div className="flex flex-col">
               <div className="mb-6">
-                <img 
-                  src="/2 1.png" 
-                  alt="Code Reviews" 
+                <img
+                  src="/2 1.png"
+                  alt="Code Reviews"
                   className="w-full max-w-md h-auto"
                 />
               </div>
@@ -222,16 +227,18 @@ function Home() {
                 Code Reviews
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                We don't just give you assignments, we review your solutions and give you insightful feedbacks on your code to enhance and reinforce your understanding.
+                We don't just give you assignments, we review your solutions and
+                give you insightful feedbacks on your code to enhance and
+                reinforce your understanding.
               </p>
             </div>
 
             {/* Feature 2: Mentorship */}
             <div className="flex flex-col">
               <div className="mb-6">
-                <img 
-                  src="/2 2.png" 
-                  alt="Mentorship" 
+                <img
+                  src="/2 2.png"
+                  alt="Mentorship"
                   className="w-full max-w-md h-auto"
                 />
               </div>
@@ -239,16 +246,18 @@ function Home() {
                 Mentorship
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Even without being in a physical class, we make it possible for our students to ask questions and get guidance through our seasoned and qualified mentors.
+                Even without being in a physical class, we make it possible for
+                our students to ask questions and get guidance through our
+                seasoned and qualified mentors.
               </p>
             </div>
 
             {/* Feature 3: Live Code Editor */}
             <div className="flex flex-col">
               <div className="mb-6">
-                <img 
-                  src="/2 3.png" 
-                  alt="Live Code Editor" 
+                <img
+                  src="/2 3.png"
+                  alt="Live Code Editor"
                   className="w-full max-w-md h-auto"
                 />
               </div>
@@ -256,16 +265,18 @@ function Home() {
                 Live Code Editor
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Whether at home or on the go, you can still follow your classes and practice with our easy-to-use code editor. It works on both the web and mobile app.
+                Whether at home or on the go, you can still follow your classes
+                and practice with our easy-to-use code editor. It works on both
+                the web and mobile app.
               </p>
             </div>
 
             {/* Feature 4: Community Forums */}
             <div className="flex flex-col">
               <div className="mb-6">
-                <img 
-                  src="/2 4.png" 
-                  alt="Community Forums" 
+                <img
+                  src="/2 4.png"
+                  alt="Community Forums"
                   className="w-full max-w-md h-auto"
                 />
               </div>
@@ -273,7 +284,9 @@ function Home() {
                 Community Forums
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Just because you are learning online doesn't mean you have to be all alone. With our discussion forum, you can share your opinions with other students and even make friends.
+                Just because you are learning online doesn't mean you have to be
+                all alone. With our discussion forum, you can share your
+                opinions with other students and even make friends.
               </p>
             </div>
           </div>
@@ -286,13 +299,13 @@ function Home() {
           <h2 className="text-4xl md:text-4xl font-bold text-white text-center ">
             What People Are Saying
           </h2>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2  gap-12 ">
             {/* Left Side - Characters */}
             <div className="flex justify-center lg:justify-start">
-              <img 
-                src="/features1.png" 
-                alt="Happy Users" 
+              <img
+                src="/features1.png"
+                alt="Happy Users"
                 className="w-full max-w-[300px] h-auto"
               />
             </div>
@@ -301,11 +314,12 @@ function Home() {
             <div className="flex flex-col justify-center text-white">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 md:p-10 mb-6">
                 <p className="text-lg md:text-xl leading-relaxed mb-4">
-                  "I took the python course using the mobile app and I found the videos encouraging and helpful."
+                  "I took the python course using the mobile app and I found the
+                  videos encouraging and helpful."
                 </p>
                 <p className="text-base md:text-lg font-semibold">- John Doe</p>
               </div>
-              
+
               {/* Pagination Dots */}
               <div className="flex justify-center lg:justify-start gap-2">
                 <div className="w-2 h-2 rounded-full border-2 border-white"></div>
@@ -324,46 +338,41 @@ function Home() {
             Download StackJunior App
           </h2>
           <p className="text-lg md:text-xl text-gray-800 text-center max-w-3xl mx-auto mb-12">
-            Whether at home or on the go, StackJunior wants you to keep learning. Hence, the StackJunior app.
+            Whether at home or on the go, StackJunior wants you to keep
+            learning. Hence, the StackJunior app.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             {/* Left Side - Phone Images */}
             <div className="relative flex  justify-center lg:justify-start">
               <div className="relative">
-                <img 
-                  src="/handphone.png" 
-                  alt="StackJunior App" 
+                <img
+                  src="/handphone.png"
+                  alt="StackJunior App"
                   className="w-full max-w-60  h-auto relative z-10"
                 />
               </div>
             </div>
 
             {/* Right Side - Phone Image and Google Play Button */}
-                          {/* Google Play Button */}
-                          <a 
-                href="#" 
-                className="inline-block"
-              >
-                <img 
-                  src="/google-play-badge 1.png" 
-                  alt="GET IT ON Google Play" 
-                  className="h-16 md:h-20 w-auto ml-25"
-                />
-              </a>
+            {/* Google Play Button */}
+            <a href="#" className="inline-block">
+              <img
+                src="/google-play-badge 1.png"
+                alt="GET IT ON Google Play"
+                className="h-16 md:h-20 w-auto ml-25"
+              />
+            </a>
 
             <div className="flex flex-col items-center lg:items-end">
               <div className="relative mb-8">
-                <img 
-                  src="/handphone2.png" 
-                  alt="StackJunior App Interface" 
+                <img
+                  src="/handphone2.png"
+                  alt="StackJunior App Interface"
                   className="w-full max-w-60 h-auto relative z-10"
                 />
               </div>
-              </div>
-              
-
-            
+            </div>
           </div>
         </div>
       </div>
@@ -371,8 +380,7 @@ function Home() {
       {/* Footer */}
       <Footer />
     </>
-  )
+  );
 }
 
-export default Home
-
+export default Home;
