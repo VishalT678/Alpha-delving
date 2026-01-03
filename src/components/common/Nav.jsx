@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
+import Logo from './Logo'
 
 function Nav() {
   const location = useLocation()
@@ -8,6 +9,7 @@ function Nav() {
     location.pathname === '/contact' ||
     location.pathname === '/login' ||
     location.pathname === '/signup' ||
+    location.pathname === '/placements' ||
     location.pathname.startsWith('/courses')
   const textColor = isWhiteBackground ? 'text-gray-800' : 'text-white'
   const hoverColor = isWhiteBackground ? 'hover:text-gray-600' : 'hover:text-gray-200'
@@ -16,10 +18,8 @@ function Nav() {
   return (
     <nav className=" w-full px-8 md:px-12 lg:px-16 py-4 bg-transparent">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Logo placeholder - will be added later */}
-        <div className="flex items-center">
-          {/* Logo space reserved */}
-        </div>
+        {/* Logo */}
+        <Logo />
 
         {/* Navigation Links */}
         <div className="flex items-center gap-8">
@@ -31,25 +31,25 @@ function Nav() {
             Courses
           </Link>
 
-          {/* About StackJunior */}
+          {/* About AlphaDelving */}
           <Link
             to="/about"
             className={`${location.pathname === '/about' ? activeTextColor : textColor} ${hoverColor} transition-colors font-medium`}
           >
             <span className="flex flex-col items-center">
-              <span>About StackJunior</span>
+              <span>About AlphaDelving</span>
               {location.pathname === '/about' && (
                 <span className="mt-1 h-1 w-24 rounded-full bg-[#0D5FA6]" />
               )}
             </span>
           </Link>
 
-          {/* Quick Tutorials */}
+          {/* Placements */}
           <Link
-            to="/tutorials"
-            className={`${location.pathname === '/tutorials' ? activeTextColor : textColor} ${hoverColor} transition-colors font-medium`}
+            to="/placements"
+            className={`${location.pathname === '/placements' ? activeTextColor : textColor} ${hoverColor} transition-colors font-medium`}
           >
-            Quick Tutorials
+            Placements
           </Link>
 
           {/* My Account */}

@@ -6,6 +6,7 @@ import Courses from './pages/Courses'
 import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import Placements from './pages/Placements'
 import IntroProgramming from './components/courses/IntroProgramming'
 import FrontendDev from './components/courses/FrontendDev'
 import UiUxDesign from './components/courses/UiUxDesign'
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/placements" element={<Placements />} />
         <Route path="/courses/introduction-to-programming" element={<IntroProgramming />} />
         <Route path="/courses/frontend-development" element={<FrontendDev />} />
         <Route path="/courses/ui-ux-designing" element={<UiUxDesign />} />

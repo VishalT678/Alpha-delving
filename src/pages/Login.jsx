@@ -11,14 +11,16 @@ function Login() {
         className="min-h-screen bg-cover bg-position-[center_top] bg-no-repeat"
         style={{ backgroundImage: 'url(/auth2.png)' }}
       >
+
         <Nav />
 
-        <section className="w-full h-230 flex items-center justify-center py-12 md:py-20">
-          <div className="relative">
+
+        <section className=" flex flex-col items-center justify-center py-52 ">
+          <div className="relative w-full max-w-4xl flex flex-col items-center">
             {/* Login Window - Light Gray Frame */}
-            <div className="bg-gray-200 rounded-2xl p-1 shadow-2xl">
+            <div className="bg-gray-200 w-full max-w-lg h-[400px] rounded-2xl p-1 shadow-2xl mb-8">
               {/* White Content Area */}
-              <div className="bg-gray-100 rounded-xl p-8 md:p-10 w-full max-w-md relative">
+              <div className="bg-gray-100 h-[400px]  rounded-xl p-8 md:p-10 w-full max-w-lg relative">
                 {/* Window Controls - Top Left */}
                 <div className="flex gap-2 mb-8">
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -128,9 +130,34 @@ function Login() {
               
             </div>
 
+            {/* Students Section - Semi-circle Layout */}
 
           </div>
+
         </section>
+        {/* <div className="relative w-full flex items-end justify-center gap-4 md:gap-8  px-4">
+              <img
+                src="/girl_book-removebg.png"
+                alt="Student with book"
+                className="w-32 h-44 md:w-48 md:h-64 lg:w-56 lg:h-72 object-contain"
+              />
+              <img
+                src="/man_bag-removebg.png"
+                alt="Student with bag"
+                className="w-32 h-44 md:w-48 md:h-64 lg:w-56 lg:h-72 object-contain"
+              />
+              <img
+                src="/pointing-removebg.png"
+                alt="Pointing student"
+                className="w-32 h-44 md:w-48 md:h-64 lg:w-56 lg:h-72 object-contain"
+              />
+              <img
+                src="/standing_girl-removebg.png"
+                alt="Standing girl"
+                className="w-32 h-44 md:w-48 md:h-64 lg:w-56 lg:h-72 object-contain"
+              />
+            </div> */}
+
       </div>
 
       <Footer />

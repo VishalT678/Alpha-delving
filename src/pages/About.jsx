@@ -13,10 +13,10 @@ function About() {
               {/* Text Content */}
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-                  About <span className="text-[#FF5A8A]">StackJunior</span>
+                  About <span className="text-[#FF5A8A]">AlphaDelving</span>
                 </h1>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6 max-w-2xl">
-                  StackJunior is an ed-tech platform that trains kids and teenagers in programming and other tech skills so as to prepare them for the opportunities of the future.
+                  AlphaDelving is an ed-tech platform that trains kids and teenagers in programming and other tech skills so as to prepare them for the opportunities of the future.
                 </p>
                 <button className="inline-flex items-center gap-2 bg-[#FF6B9D] hover:bg-[#FF5A8A] text-white font-semibold px-5 py-3 rounded-lg transition-colors">
                   <span role="img" aria-label="search">🔍</span> Explore
@@ -27,7 +27,7 @@ function About() {
               <div className="flex justify-center lg:justify-end">
                 <img
                   src="/aboutus 1.png"
-                  alt="About StackJunior illustration"
+                  alt="About AlphaDelving illustration"
                   className="w-full max-w-xl h-auto"
                 />
               </div>

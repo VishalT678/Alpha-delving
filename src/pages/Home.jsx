@@ -126,7 +126,7 @@ function Home() {
                 An Interactive Personalized Learning Experience
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                With StackJunior's flexible learning options and 1-on-1 code
+                With AlphaDelving's flexible learning options and 1-on-1 code
                 review with seasoned tutors, your learning is suited just for
                 you.
               </p>
@@ -159,7 +159,7 @@ function Home() {
                 World-Class Learning with World-Class Jobs
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                At StackJunior, we impact students with industry-standard skills
+                At AlphaDelving, we impact students with industry-standard skills
                 and training. We also support them in getting jobs that are
                 available from around the globe. How cool is that?
               </p>
@@ -176,7 +176,7 @@ function Home() {
             QUICK TUTORIALS
           </h2>
           <p className="text-lg md:text-xl text-white max-w-4xl mx-auto leading-relaxed">
-            At StackJunior, acquire industry-relevant tech skills such as
+            At AlphaDelving, acquire industry-relevant tech skills such as
             programming, software development, data science, cloud computing and
             more to become a <strong>world-class IT professional</strong>.
           </p>
@@ -331,15 +331,15 @@ function Home() {
         </div>
       </div>
 
-      {/* Download StackJunior App Section - Orange Background */}
+      {/* Download AlphaDelving App Section - Orange Background */}
       <div className="bg-[#FCBA4D] h-[500px] w-full py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-6">
-            Download StackJunior App
+            Download AlphaDelving App
           </h2>
           <p className="text-lg md:text-xl text-gray-800 text-center max-w-3xl mx-auto mb-12">
-            Whether at home or on the go, StackJunior wants you to keep
-            learning. Hence, the StackJunior app.
+            Whether at home or on the go, AlphaDelving wants you to keep
+            learning. Hence, the AlphaDelving app.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
@@ -348,7 +348,7 @@ function Home() {
               <div className="relative">
                 <img
                   src="/handphone.png"
-                  alt="StackJunior App"
+                  alt="AlphaDelving App"
                   className="w-full max-w-60  h-auto relative z-10"
                 />
               </div>
@@ -368,7 +368,7 @@ function Home() {
               <div className="relative mb-8">
                 <img
                   src="/handphone2.png"
-                  alt="StackJunior App Interface"
+                  alt="AlphaDelving App Interface"
                   className="w-full max-w-60 h-auto relative z-10"
                 />
               </div>

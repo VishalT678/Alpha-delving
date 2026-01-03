@@ -14,11 +14,11 @@ function Signup() {
       <Nav />
 
       <section className="w-full h-230 flex items-center justify-center py-12 md:py-20">
-        <div className="relative">
+        <div className="relative w-[500px]">
           {/* Login Window - Light Gray Frame */}
           <div className="bg-gray-200 rounded-2xl p-1 shadow-2xl">
             {/* White Content Area */}
-            <div className="bg-gray-100 rounded-xl p-8 md:p-10 w-full max-w-md relative">
+            <div className="bg-gray-100 rounded-xl p-8 md:p-10 w-full max-w-lg relative">
               {/* Window Controls - Top Left */}
               <div className="flex gap-2 mb-8">
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -27,13 +27,13 @@ function Signup() {
               </div>
 
               {/* Magnifying Glass - Upper Right Quadrant */}
-              <div className="absolute top-12 right-8 w-24 h-24 z-10">
+              {/* <div className="absolute top-12 right-8 w-24 h-24 z-10">
                 <img
                   src="/search1.png"
                   alt="Search"
                   className="w-full h-full object-contain"
                 />
-              </div>
+              </div> */}
 
               {/* Signup Form */}
               <div className="space-y-8 relative z-0">
@@ -163,19 +163,19 @@ function Signup() {
                     />
                   </svg>
                 </div>
+
+                {/* Back to Login Button - Inside Card */}
+                <div className="mt-6 text-center">
+                  <Link
+                    to="/login"
+                    className="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium px-6 py-2 rounded-lg transition-colors"
+                  >
+                    Back to Login
+                  </Link>
+                </div>
               </div>
             </div>
             
-          </div>
-
-          {/* Back to Login Button - Below Window */}
-          <div className="mt-8 text-center">
-            <Link
-              to="/login"
-              className="inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold px-6 py-2 rounded-lg transition-colors"
-            >
-              Back to Login
-            </Link>
           </div>
 
         </div>

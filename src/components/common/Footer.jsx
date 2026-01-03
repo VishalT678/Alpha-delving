@@ -6,9 +6,12 @@ function Footer() {
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          {/* Left Section - StackJunior Information */}
+          {/* Left Section - AlphaDelving Information */}
           <div className="text-white">
-            <h3 className="text-2xl font-bold mb-4">StackJunior</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              <span className="text-[#0063A4]">Alpha</span>
+              <span className="text-[#FF0B80]">Delving</span>
+            </h3>
             <p className="text-sm md:text-base leading-relaxed text-white/90">
               Is an ed-tech platform that trains kids and teenagers in programming and other tech skills
             </p>
@@ -20,7 +23,7 @@ function Footer() {
             <ul className="space-y-2">
               <li>
                 <a href="/about" className="text-sm md:text-base text-white/90 hover:text-white transition-colors">
-                  About StackJunior
+                  About AlphaDelving
                 </a>
               </li>
               <li>
@@ -105,7 +108,7 @@ function Footer() {
       <div className="bg-[#1A5C8A] w-full py-4">
         <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
           <p className="text-center text-white text-sm md:text-base">
-            ©2022 - StackJunior. All Rights Reserved.
+            ©2022 - AlphaDelving. All Rights Reserved.
           </p>
         </div>
       </div>
