@@ -5,83 +5,104 @@ import Footer from "../common/Footer";
 function FrontendDev() {
   return (
     <>
-      <div className="bg-[#D1E4F1] min-h-screen">
+      <div className="bg-white min-h-screen">
         <Nav />
 
-        {/* <section className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 py-10"> */}
-
-          <div className="bg-[#F8C35C] h-[500px] shadow-md p-6 lg:col-span-2">
-            <div className="flex flex-col  items-center">
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                Frontend Development
-              </h1>
-              <p className="text-lg font-bold text-gray-800 mb-4">
-                ⏱ Duration: 4 weeks &nbsp; | &nbsp; 📂 4 Levels &nbsp; | &nbsp; ⭐ Status:
-                Intermediate
-              </p>
-            </div>
-            <div className="bg-white  w-[480px]  rounded-xl shadow-md p-6 lg:col-span-1">
+        {/* Top yellow section with course title and card */}
+        <section className="bg-[#FFC34D] pt-10 pb-6">
+          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 flex flex-col lg:flex-row gap-10 items-start">
+            {/* Left card */}
+            <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-sm">
               <img
                 src="/courses3 1.png"
                 alt="Frontend Development"
-                className=" rounded-md mb-4"
+                className="w-full rounded-md mb-4"
               />
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">
                 Course Details
               </h2>
-              <ul className="space-y-3 text-sm text-gray-800">
-                <li>📚 10 course materials</li>
-                <li>🧩 3 Projects</li>
-                <li>🎥 15 Videos</li>
+              <ul className="space-y-3 text-sm text-gray-800 mb-6">
+                <li className="flex items-center gap-2">
+                  <span>📚</span>
+                  <span>10 course materials</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span>🧩</span>
+                  <span>3 Projects</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span>🎥</span>
+                  <span>15 Videos</span>
+                </li>
               </ul>
-              <Link to="/contact" className="block mt-6 w-[430px] bg-[#FF3B7F] text-white font-semibold py-3 rounded-md text-sm hover:bg-[#e43372] transition-colors text-center">
+              <Link to="/contact" className="block w-full bg-[#FF3B7F] text-white font-semibold py-3 rounded-md text-sm hover:bg-[#e43372] transition-colors text-center">
                 ENROLL NOW
               </Link>
             </div>
-              </div>
-              <h2 className="font-semibold  bg-black text-white flex justify-center items-center py-2 mb-2">Description</h2>
 
-                      
+            {/* Right heading/meta */}
+            <div className="flex-1 flex flex-col justify-end">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Frontend Development
+              </h1>
+              <p className="text-base md:text-lg text-gray-800 mb-4">
+                ⏱ Duration: 4 weeks &nbsp; | &nbsp; 📂 4 Levels &nbsp; | &nbsp; ⭐ Status: Intermediate
+              </p>
+              <p className="text-sm text-gray-700 leading-relaxed max-w-2xl">
+                Learn how to build beautiful, responsive websites using HTML, CSS and modern JavaScript frameworks. This course walks you through practical projects to solidify your skills.
+              </p>
+            </div>
+          </div>
+          {/* Black divider bar under top section */}
+          <div className="mt-6 h-4 bg-black" />
+        </section>
 
-
-
-         
-          <div className="flex flex-col items-end">
-          <div className="">
-          <p className="text-sm text-gray-800 leading-relaxed">
+        {/* Description + videos on light blue background */}
+        <section className="bg-[#E6F4FF] py-12">
+          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 space-y-8">
+            {/* Description */}
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Description</h2>
+              <p className="text-base text-gray-800 leading-relaxed max-w-4xl">
                 Learn how to build beautiful, responsive websites using HTML, CSS and
                 modern JavaScript frameworks. This course walks you through practical
-                projects to solidify your skills.
+                projects to solidify your skills. Master the art of creating user interfaces
+                that are both functional and visually appealing.
               </p>
-            
-            <ul className="divide-y divide-[#BFBEBE] text-sm text-black">
-            <h2 className="font-bold text-gray-900 mb-4">📺 Videos</h2>
-              {[
-                "Introduction to Frontend",
-                "HTML Basics",
-                "Modern CSS",
-                "JavaScript for the Web",
-                "Building Responsive Layouts",
-              ].map((title, idx) => (
-                <li
-                  key={title + idx}
-                  className="flex items-center justify-between py-3"
-                >
-                  <span>{title}</span>
-                  <span className="text-xs text-gray-600">02 : 10</span>
-                </li>
-              ))}
-            </ul>
+            </div>
+
+            {/* Videos list */}
+            <div className="bg-white rounded-xl shadow-md overflow-hidden">
+              <div className="px-6 py-4 border-b border-gray-200 flex items-center gap-3 bg-gray-50">
+                <span className="text-2xl">📺</span>
+                <h2 className="text-xl font-bold text-gray-900">Course Videos</h2>
+              </div>
+              <ul className="divide-y divide-gray-200">
+                {[
+                  "Introduction to Frontend",
+                  "HTML Basics",
+                  "Modern CSS",
+                  "JavaScript for the Web",
+                  "Building Responsive Layouts",
+                  "React Fundamentals",
+                ].map((title, idx) => (
+                  <li
+                    key={title + idx}
+                    className="flex items-center justify-between px-6 py-4 hover:bg-[#F3F8FF] transition-colors"
+                  >
+                    <span className="text-gray-800 font-medium">{title}</span>
+                    <span className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded">02 : 10</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        {/* </section> */}
-        </div>
+        </section>
       </div>
-       {/* </div> */}
+
       <Footer />
     </>
   );
 }
 
 export default FrontendDev;
-
-

@@ -13,6 +13,9 @@ import IntroProgramming from './components/courses/IntroProgramming'
 import FrontendDev from './components/courses/FrontendDev'
 import UiUxDesign from './components/courses/UiUxDesign'
 import SqlProgramming from './components/courses/SqlProgramming'
+import BigDataAnalytics from './components/courses/BigDataAnalytics'
+import FullStackDevelopment from './components/courses/FullStackDevelopment'
+import DigitalMarketing from './components/courses/DigitalMarketing'
 import './App.css'
 
 function App() {
@@ -33,6 +36,9 @@ function App() {
           <Route path="/courses/frontend-development" element={<FrontendDev />} />
           <Route path="/courses/ui-ux-designing" element={<UiUxDesign />} />
           <Route path="/courses/sql-programming" element={<SqlProgramming />} />
+          <Route path="/courses/big-data-analytics" element={<BigDataAnalytics />} />
+          <Route path="/courses/full-stack-development" element={<FullStackDevelopment />} />
+          <Route path="/courses/digital-marketing" element={<DigitalMarketing />} />
         </Routes>
       </Router>
     </AuthProvider>

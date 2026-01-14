@@ -5,66 +5,97 @@ import Footer from "../common/Footer";
 function SqlProgramming() {
   return (
     <>
-      <div className="bg-[#F9EDE3] min-h-screen">
+      <div className="bg-white min-h-screen">
         <Nav />
 
-        <section className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 py-10">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-            <div className="bg-white rounded-xl shadow-md p-6 lg:col-span-1">
+        {/* Top yellow section with course title and card */}
+        <section className="bg-[#FFC34D] pt-10 pb-6">
+          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 flex flex-col lg:flex-row gap-10 items-start">
+            {/* Left card */}
+            <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-sm">
               <img
                 src="/programming 1.png"
                 alt="SQL Programming"
                 className="w-full rounded-md mb-4"
               />
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">
                 Course Details
               </h2>
-              <ul className="space-y-3 text-sm text-gray-800">
-                <li>📚 9 course materials</li>
-                <li>🧩 3 Projects</li>
-                <li>🎥 14 Videos</li>
+              <ul className="space-y-3 text-sm text-gray-800 mb-6">
+                <li className="flex items-center gap-2">
+                  <span>📚</span>
+                  <span>9 course materials</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span>🧩</span>
+                  <span>3 Projects</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span>🎥</span>
+                  <span>14 Videos</span>
+                </li>
               </ul>
-              <Link to="/contact" className="block mt-6 w-full bg-[#FF3B7F] text-white font-semibold py-3 rounded-md text-sm hover:bg-[#e43372] transition-colors text-center">
+              <Link to="/contact" className="block w-full bg-[#FF3B7F] text-white font-semibold py-3 rounded-md text-sm hover:bg-[#e43372] transition-colors text-center">
                 ENROLL NOW
               </Link>
             </div>
 
-            <div className="bg-[#F8C35C] rounded-xl shadow-md p-6 lg:col-span-2">
-              <h1 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">
+            {/* Right heading/meta */}
+            <div className="flex-1 flex flex-col justify-end">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 SQL Programming
               </h1>
-              <p className="text-xs text-gray-800 mb-4">
-                ⏱ Duration: 4 weeks &nbsp; | &nbsp; 📂 4 Levels &nbsp; | &nbsp; ⭐ Status:
-                Intermediate
+              <p className="text-base md:text-lg text-gray-800 mb-4">
+                ⏱ Duration: 4 weeks &nbsp; | &nbsp; 📂 4 Levels &nbsp; | &nbsp; ⭐ Status: Intermediate
               </p>
-              <h2 className="font-semibold text-gray-900 mb-2">Description</h2>
-              <p className="text-sm text-gray-800 leading-relaxed">
-                Learn how to work with relational databases using SQL. Write queries to
-                retrieve, filter and aggregate data, and understand how SQL powers many
-                modern applications.
+              <p className="text-sm text-gray-700 leading-relaxed max-w-2xl">
+                Learn how to work with relational databases using SQL. Write queries to retrieve, filter and aggregate data, and understand how SQL powers many modern applications.
               </p>
             </div>
           </div>
+          {/* Black divider bar under top section */}
+          <div className="mt-6 h-4 bg-black" />
+        </section>
 
-          <div className="bg-[#E6F4FF] rounded-xl shadow-md p-6">
-            <h2 className="font-semibold text-gray-900 mb-4">📺 Videos</h2>
-            <ul className="divide-y divide-gray-200 text-sm text-gray-800">
-              {[
-                "Getting Started with SQL",
-                "Selecting Data",
-                "Filtering and Sorting",
-                "Aggregations and Grouping",
-                "Joins and Relationships",
-              ].map((title, idx) => (
-                <li
-                  key={title + idx}
-                  className="flex items-center justify-between py-3"
-                >
-                  <span>{title}</span>
-                  <span className="text-xs text-gray-600">02 : 10</span>
-                </li>
-              ))}
-            </ul>
+        {/* Description + videos on light blue background */}
+        <section className="bg-[#E6F4FF] py-12">
+          <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 space-y-8">
+            {/* Description */}
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Description</h2>
+              <p className="text-base text-gray-800 leading-relaxed max-w-4xl">
+                Learn how to work with relational databases using SQL. Write queries to
+                retrieve, filter and aggregate data, and understand how SQL powers many
+                modern applications. Master database design, normalization, and advanced
+                query techniques.
+              </p>
+            </div>
+
+            {/* Videos list */}
+            <div className="bg-white rounded-xl shadow-md overflow-hidden">
+              <div className="px-6 py-4 border-b border-gray-200 flex items-center gap-3 bg-gray-50">
+                <span className="text-2xl">📺</span>
+                <h2 className="text-xl font-bold text-gray-900">Course Videos</h2>
+              </div>
+              <ul className="divide-y divide-gray-200">
+                {[
+                  "Getting Started with SQL",
+                  "Selecting Data",
+                  "Filtering and Sorting",
+                  "Aggregations and Grouping",
+                  "Joins and Relationships",
+                  "Advanced SQL Queries",
+                ].map((title, idx) => (
+                  <li
+                    key={title + idx}
+                    className="flex items-center justify-between px-6 py-4 hover:bg-[#F3F8FF] transition-colors"
+                  >
+                    <span className="text-gray-800 font-medium">{title}</span>
+                    <span className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded">02 : 10</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
       </div>
@@ -75,5 +106,3 @@ function SqlProgramming() {
 }
 
 export default SqlProgramming;
-
-
